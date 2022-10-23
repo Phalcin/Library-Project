@@ -259,13 +259,13 @@ button:active {
 
 .highlights__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
   padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -291,6 +291,7 @@ button:active {
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* FEATURES */
@@ -396,7 +397,26 @@ footer {
     padding: 0 24px;
   }
 
-  height: 1px;
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .books {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .book {
+    width: 50%;
+  }
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES */
@@ -407,5 +427,17 @@ footer {
   }
   .btn__menu {
     display: block;
+  }
+
+  .book {
+    width: 50%;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
